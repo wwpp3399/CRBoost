@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'CRBoost'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CRBoost.'
+s.name             = 'CRBoost'
+s.version          = '0.1.0'
+s.summary          = 'A short description of CRBoost.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,27 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
+s.description      = <<-DESC
 TODO: Add long description of the pod here.
-                       DESC
+DESC
 
-  s.homepage         = 'https://github.com/csc-EricWu/CRBoost'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Eric Wu' => 'starring.wu@gmail.com' }
-  s.source           = { :git => 'https://github.com/csc-EricWu/CRBoost.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/csc-EricWu/CRBoost'
+# s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'Eric Wu' => 'starring.wu@gmail.com' }
+s.source           = { :git => 'https://github.com/csc-EricWu/CRBoost.git', :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CRBoost/**/*'
-  
-  # s.resource_bundles = {
-  #   'CRBoost' => ['CRBoost/Assets/*.png']
-  # }
+s.source_files = 'CRBoost/**/*'
+s.requires_arc = true
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+# s.resource_bundles = {
+#   'CRBoost' => ['CRBoost/Assets/*.png']
+# }
+
+# s.public_header_files = 'CRBoost/CRBoost.h'
+s.frameworks = 'UIKit'
+# s.dependency 'AFNetworking', '~> 2.3'
 end
