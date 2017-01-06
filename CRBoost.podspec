@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'CRBoost'
-s.version          = '0.1.0'
+s.version          = '0.0.4'
 s.summary          = 'A short description of CRBoost.'
 
 # This description is used to generate tags and improve search results.
@@ -32,12 +32,15 @@ s.ios.deployment_target = '8.0'
 
 s.source_files = 'CRBoost/**/*'
 s.requires_arc = true
+s.platform     = :ios, "8.0"
+
 
 # s.resource_bundles = {
 #   'CRBoost' => ['CRBoost/Assets/*.png']
 # }
 
 # s.public_header_files = 'CRBoost/CRBoost.h'
-s.frameworks = 'UIKit'
+s.frameworks = 'UIKit' ,'Foundation'
+s.module_name = 'CRBoost'
 # s.dependency 'AFNetworking', '~> 2.3'
 end
